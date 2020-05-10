@@ -1,5 +1,13 @@
+import random
+
 def main():
-  print('You rolled a die')
+  number_dice =2
+  dice_sum =0
+  for i in range(0,number_dice):  
+    roll=random.randint(1,6)
+    dice_sum+=roll
+    print(f'You rolled a {roll}')
+  print(f'The sum is {dice_sum}')
 
 if __name__== "__main__":
   main()
